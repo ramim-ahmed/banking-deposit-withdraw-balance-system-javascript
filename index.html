@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Bank-Account-Javascript</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center font-semibold mt-16">
+        Welcome To, <span class="text-indigo-800 font-bold">UCB BANK</span>
+      </h1>
+    </header>
+
+    <!-- user login section -->
+    <section class="mt-8 w-2/4 mx-auto bg-gray-300 p-8 text-center">
+      <h3 class="text-3xl font-bold mb-4">Please Login</h3>
+      <form>
+        <div class="my-2">
+          <input
+            required
+            id="user-name"
+            class="w-3/4 p-2"
+            type="text"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="my-2">
+          <input
+            required
+            id="user-email"
+            class="w-3/4 p-2"
+            type="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div>
+          <input
+            required
+            id="user-password"
+            class="w-3/4 p-2"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+        <input
+          id="submit-btn"
+          type="submit"
+          class="mt-4 px-4 py-0.5 cursor-pointer"
+          value="Submit"
+        />
+      </form>
+    </section>
+
+    <!-- connect javascript  -->
+    <script src="js/bank-login.js"></script>
+  </body>
+</html>

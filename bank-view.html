@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>UCB BANK</title>
+  </head>
+  <body>
+    <header class="my-16 w-3/4 text-center mx-auto">
+      <div>
+        <h1 class="text-5xl font-bold">Let,s Get Some Money!!</h1>
+      </div>
+    </header>
+    <main>
+      <section class="w-3/4 mx-auto">
+        <div class="my-8">
+          <a class="bg-indigo-400 px-4 my-2 text-white" href="index.html"
+            >Back</a
+          >
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-blue-800 p-8 rounded-xl text-white">
+            <h1 class="text-2xl">Deposit</h1>
+            <h1 class="text-3xl font-bold">
+              $<span id="deposit-amount">00</span>
+            </h1>
+          </div>
+          <div class="bg-purple-800 p-8 rounded-xl text-white">
+            <h1 class="text-2xl">Withdraw</h1>
+            <h1 class="text-3xl font-bold">
+              $<span id="withdraw-amount">00</span>
+            </h1>
+          </div>
+          <div class="bg-green-800 p-8 rounded-xl text-white">
+            <h1 class="text-2xl">Balance</h1>
+            <h1 class="text-3xl font-bold">$<span id="balance">1020</span></h1>
+          </div>
+        </div>
+
+        <!-- deposit and withdraw form -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-16">
+          <div class="bg-blue-500 p-8 rounded">
+            <form>
+              <label class="text-1xl font-semibold text-white">Deposit</label>
+              <div class="my-2">
+                <input
+                  id="deposit-input-value"
+                  class="w-3/4 p-2"
+                  type="number"
+                  placeholder="$deposit amount"
+                />
+              </div>
+              <input
+                id="deposit-btn"
+                class="px-2 bg-green-300"
+                type="submit"
+                value="Submit"
+              />
+            </form>
+          </div>
+          <div class="bg-purple-900 p-8 rounded">
+            <form>
+              <label class="text-1xl font-semibold text-white">Withdraw</label>
+              <div class="my-2">
+                <input
+                  id="withdraw-input-amount"
+                  class="w-3/4 p-2"
+                  type="number"
+                  placeholder="$withdraw amount"
+                />
+              </div>
+              <input
+                id="withdraw-button"
+                class="px-2 bg-green-300"
+                type="submit"
+                value="Submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- connect javascript file -->
+    <script src="js/bank-view.js"></script>
+  </body>
+</html>
